@@ -1,0 +1,301 @@
+/*
+ * Estilos de tu proyecto
+ */
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+[class*="col-"] {
+  min-height: 7px;
+  padding: 12px;
+  float: left;
+}
+
+.col-1 {
+  /* (1/12)*100 */
+  width: 8.333333%;
+}
+
+.col-2 {
+  /* (2/12)*100 */
+  width: 16.666667%;
+}
+
+.col-3 {
+  /* (3/12)*100 */
+  width: 25%;
+}
+
+.col-4 {
+  /* (4/12)*100 */
+  width: 33.333333%;
+}
+
+.col-5 {
+  /* (5/12)*100 */
+  width: 41.666667;
+}
+
+.col-6 {
+  /* (6/12)*100 */
+  width: 50%;
+}
+
+.col-7 {
+  /* (7/12)*100 */
+  width: 58.333333%;
+}
+
+.col-8 {
+  /* (8/12)*100 */
+  width: 66.666667%;
+}
+
+.col-9 {
+  /* (9/12)*100 */
+  width: 75%;
+}
+
+
+.col-10{
+  /* (10/12)*100 */
+  width: 83.333333%;
+}
+
+.col-11 {
+  /* (11/12)*100 */
+  width: 91.666667%;
+}
+
+.col-12 {
+  /* (12/12)*100 */
+  width: 100%;
+}
+
+body {
+  /* Establece la fuente de Google aquí */
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;f
+}
+
+header {
+    position: fixed;
+    background-color: #94aad5;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Akronim', cursive;
+}
+
+header.collapse a.text-start {
+  font-size: 50px;
+  transition-duration: 500ms;
+}
+
+header.collapse a:not(.text-start) {
+  padding: 40px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;    
+}
+
+header a {
+  transition-duration: 500ms;
+  float: right;
+}
+
+header a.selected {
+  background-color: #868ca8;
+}
+
+a:hover {
+  color: #868ca8;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+#portfolio h2.titulo {
+  font-size: 35px;
+  padding: 10px;
+}
+#about h2.text-about {
+  font-size: 35px;
+}
+
+#contactme h2.text-contactme{
+  font-size: 35px;
+}
+
+header p {
+	color: white;
+  padding: 20px 20px 0px 20px;
+  display: inline-block;
+  font-size: 30px;
+  border-width: bold;
+}
+
+#home {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#868ca8;
+  padding: 70px;
+  padding-top: 140px;
+  background-image: url(" ../images/fondo-heder.jpg");
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 40px;
+}
+
+.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 300px;
+    width: 300px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 90%;
+    border-radius: 90%;
+}
+
+img {
+	padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#about p {
+  font-size: 15px;
+  text-align: left;
+  padding: 10px;
+  color: white;
+}
+
+#about h2 {
+  color: white;
+}
+
+#about {
+  background-color: #868ca8;
+  padding: 50px;
+  font-size: 25px;
+
+}
+
+#contactme {
+  padding: 50px;
+  overflow: auto;
+}
+#contactme input,
+#contactme textarea {
+  width: 100%;
+  font-size: 25px;
+  border-style: none;
+  border-width: 0;
+  border-color: transparent; 
+  margin: 20px;
+  outline: none;
+}
+
+#contactme button {
+  background-color: #19c3a8;
+  border-style: none;
+  border-width: 0;
+  border-color: transparent;
+  border-radius: 5px;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px 0;
+  float: left;
+  cursor: pointer;
+}
+
+#contactme button:hover {
+  background-color: #009075;
+}
+
+#information {
+  color: white;
+}
+
+#information a {
+  padding: 0;
+  margin: 0;
+}
+
+#information a i {
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #94aad5;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.starline {
+  color: #94aad5;
+  font-size: 32px !important;
+  padding-top: ;
+}
+
+#home .starline {
+  color: #94aad5;
+}
+
+#information {
+  background-color: #868ca8;
+  padding: 50px;
+
+}
+
+.text-start {
+  float: left;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.btn {
+  border-color: white;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  font-size: 1rem;
+  transition-duration: 600ms;
+  cursor: pointer;
+}
