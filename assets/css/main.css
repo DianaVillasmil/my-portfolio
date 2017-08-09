@@ -94,7 +94,7 @@ body {
 
 header {
     position: fixed;
-    background-color: #94aad5;
+    background-color: #7b8096;
     width: 100%;
     font-size: 20px;
     font-family: 'Akronim', cursive;
@@ -121,11 +121,12 @@ header a {
 }
 
 header a.selected {
-  background-color: #868ca8;
+  background-color: #e7f0f9;
+  color: #7b8096;
 }
 
 a:hover {
-  color: #868ca8;
+  color: #e7f0f9;
 }
 
 .text-uppercase {
@@ -260,8 +261,53 @@ img {
   border-radius: 50%;
 }
 
+/*hover imagen portafolio*/
+
+.box img {
+transition: all 0.2s linear;
+}
+.box .mascara {
+opacity: 0;
+background-color: rgba(46,157,120, 0.7);
+transition: all 0.3s ease-in-out;
+}
+.box h2 {
+transform: translateX(-200px);/*Desplazamos a la izquierda*/
+opacity: 0;
+transition: all 0.7s ease-in-out;
+}
+.box p {
+transform: translateX(200px);/*Desplazamos a la derecha*/
+opacity: 0;
+transition: all 0.4s linear;
+}
+.box a.link{
+opacity: 0;
+transition: all 0.4s ease-in-out;
+transform: translateY(100px)/*Desplazamos para abajo*/
+}
+.box:hover img {
+transform: scale(1.1);/*Damos un ligero zoom a la imagen*/
+}
+.box:hover .mascara {
+opacity: 1;
+}
+.box:hover h2,
+.box:hover p,
+.box:hover a.link {
+opacity: 1;
+transform: translateX(0px);/*Regresamos a las posiciones originales*/
+}
+.box:hover p {
+transition-delay: 0.1s;
+}
+.box:hover a.link {
+transition-delay: 0.2s; /*Aplicamos un pequeño retardo para que se muestre al final*/
+transform: translateY(0px);
+}
+
 footer {
-  background-color: #94aad5;
+  background-color: #7b8096;
   color: white;
   text-align: center;
   padding: 25px;
@@ -299,3 +345,5 @@ footer {
   transition-duration: 600ms;
   cursor: pointer;
 }
+
+/*http://www.miguelmanchego.com/2015/css3-efectos-hover-para-imagenes/*/
